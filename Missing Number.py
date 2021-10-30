@@ -5,9 +5,7 @@ class Solution:
     for i in range(n-1):
       sum-=array[i]
     return sum
-N=int(intput())
-array=[]
+n=int(input())
 print("Enter numbers in range of 1 to",n)
-for i in range(N-1):
-  array[i]=int(input())
-  print("The missing number in the given list of number is",Missing_Number(array,N))
+array=list(map(int,input().split()))
+print("The missing number in the given list of number is",int(Solution().Missing_Number(array,n)))
